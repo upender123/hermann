@@ -8,7 +8,7 @@ stage ('Build') {
 
   node {
     // Checkout
-    checkout scm
+    git 'https://github.com/reiseburo/hermann.git'
 
     // install required bundles
     sh 'bundle install'
